@@ -1,0 +1,15 @@
+[7:56 pm, 13/09/2026] Maam Bidyapati (NIT CSE): Syllabus of mid-term exam Unit 1: Fundamentals of Digital Communication
+•	Signals and noise
+•	Nyquist rate
+•	Shannon capacity
+Unit 2: Analog Communication Techniques
+•	Analog transmission techniques
+•	Modulation techniques
+•	Fundamentals of AM and FM
+Unit 3: Digital Transmission Techniques
+•	PCM, ADPCM
+•	Line coding
+•	Error handling techniques
+•	TDM, xDSL
+•	Spread spectrum
+[7:56 pm, 13/09/2026] Maam Bidyapati (NIT CSE): Error detection is also included.

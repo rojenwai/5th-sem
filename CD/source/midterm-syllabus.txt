@@ -1,0 +1,1 @@
+Mid syllabus: NFA, DFA, their conversion, their construction from given string, eliminating left recursion, predictive parsing, a lex program, eliminating  ambiguity, FIRST & FOLLOW
