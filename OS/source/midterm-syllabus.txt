@@ -1,0 +1,105 @@
+OPERATING SYSTEMS — MID-TERM SYLLABUS (topic list as supplied)
+
+TYPES OF OS (only brief one sentence definition)
+1. Batch OS
+2. Time sharing / Multiprogramming OS
+3. Multiprocessing OS
+4. Distributed OS
+5. Network OS
+6. Real-time OS
+7. Embedded OS
+
+PROCESS
+PROCESS STATE DIAGRAM (five state, seven state)
+Scheduler
+
+CPU SCHEDULING
+Important parameters and terminologies
+
+CPU SCHEDULING ALGORITHMS
+FCFS
+Gantt chart
+FCFS with overhead
+Disadvantage of FCFS (convoy effect)
+
+SJF
+
+BT PREDICTION TECHNIQUE
+Static (process size, process type)
+Dynamic (simple average, exponential average / aging)
+
+SRTF
+
+PREEMPTIVE PRIORITY SCHEDULING
+ROUND ROBIN ALGORITHM
+
+SYSTEM CALL
+User mode (safe mode)
+Kernel mode
+
+PROCESS CONTROL BLOCK
+
+CONTEXT SWITCHING
+
+PROCESS CREATION
+Parent and child process
+Resource sharing alternatives
+Execution alternatives
+fork()
+exec()
+
+THREAD
+Multithreading concept
+Types of thread (user thread, kernel thread)
+Types of relationship between the user thread and kernel thread
+  - many to one
+  - one to one
+  - many to many
+
+INTERPROCESS COMMUNICATION AND SYNCHRONIZATION
+Race condition
+Critical section
+
+PROCESS SYNCHRONIZATION
+Requirements of a synchronization mechanism
+  Primary   (mutual exclusion, progress)
+  Secondary (bounded waiting, portability / architectural neutrality)
+Types
+  busy waiting
+  no busy waiting
+
+MECHANISMS
+Lock variable
+Test and Set Lock
+Turn variable
+Interested variable
+
+Synchronization mechanism
+Priority inversion
+Sleep and wake
+
+PRODUCER CONSUMER PROBLEM (BOUNDED BUFFER)
+
+SEMAPHORE
+Types (binary, counting)
+Working mechanism
+Two operations
+Counting semaphore
+Binary semaphore
+Mutex
+Producer and consumer implementation using semaphores
+
+DEADLOCK (with diagram)
+Necessary conditions for deadlock
+
+DEADLOCK HANDLING
+Deadlock ignorance
+Deadlock prevention
+Deadlock avoidance
+Deadlock detection and recovery
+
+DEADLOCK AVOIDANCE
+Banker's algorithm
+
+RESOURCE ALLOCATION GRAPH
+DEADLOCK DETECTION AND RECOVERY

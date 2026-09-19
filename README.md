@@ -10,7 +10,7 @@ Chapter-wise notes for the mid-term examination, written from the class material
 | [Data Communication](Data%20Communication/) | [13 chapters](Data%20Communication/notes/) | Units 1–3 | ✅ Complete |
 | [Software Engineering](SE/) | [7 chapters](SE/notes/) | No syllabus file — scoped to lectures | ✅ Complete |
 | [Compiler Design](CD/) | [9 chapters](CD/notes/) | NFA/DFA → Predictive Parsing | ✅ Complete |
-| [Operating Systems](OS/) | — | — | ⏳ Awaiting material |
+| [Operating Systems](OS/) | [22 chapters](OS/notes/) | Process → Deadlock | ✅ Complete |
 
 ## How each subject is organised
 
@@ -41,7 +41,7 @@ Each chapter follows the same shape, so you always know where to look:
 
 ## Known gaps
 
-- **OS** — folder is empty, no material supplied yet.
+- **OS** — no class material supplied; notes written from the **topic list you provided** (saved in `OS/source/midterm-syllabus.txt`) using standard OS theory. Each OS file carries a banner saying so. Two conventions to confirm against your class notes: **lower number = higher priority**, and the Round Robin queue rule (a new arrival is enqueued **before** a process preempted at the same instant).
 - **SE** — Lecture 5 is missing from the folder; L1–L4, L6, L7 are covered.
 - **CD** — no class material supplied; notes written from the syllabus using standard compiler theory. Each CD file carries a banner saying so.
 - **Data Communication** — `topology.pdf`, `Switching.pdf` and `guided_unguided.pdf` are **outside** the mid-term syllabus, so they have no notes. They remain in `source/` for the end-semester exam.
@@ -55,3 +55,8 @@ Each chapter follows the same shape, so you always know where to look:
 - [ ] Data Communication — Unit 3 (ch. 7–13)
 - [ ] Software Engineering — all 7 chapters
 - [ ] Compiler Design — all 9 chapters
+- [ ] Operating Systems — chapters 1–9 (process & CPU scheduling)
+- [ ] Operating Systems — chapters 10–13 (system calls, PCB, fork/exec, threads)
+- [ ] Operating Systems — chapters 14–18 (synchronization & semaphores)
+- [ ] Operating Systems — chapters 19–21 (deadlock)
+- [ ] Operating Systems — [numerical problem bank](OS/notes/22-numerical-problem-bank.md)
