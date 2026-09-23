@@ -15,10 +15,16 @@
 | 5 | [Formal Specification of Systems](notes/05-formal-specification-of-systems.md) | **L4** (18-08-2026) | `Lecture 4- Formal Specification of Systems 2pg  pdf.md` |
 | 6 | [Software Design Fundamentals](notes/06-software-design-fundamentals.md) | **L6** (28-08-2026) | `Lecture 6 Software Design-Prahlad-NIT-CS3501.md` |
 | 7 | [Function-Oriented Design](notes/07-function-oriented-design.md) | **L7** (09-09-2026) | `Lecture 7 Function Oriented Design-Prahlad-NIT-CS3501.md` |
+| 8 | [Mid-Sem 2025 Paper — Solved](notes/08-mid-sem-2025-paper-solved.md) ⭐ *last year's actual paper* | — | `MID-SEM- SE_2025.pdf` |
 
-## ⚠️ Known gap
+## Exam pattern (from the 2025 paper)
 
-**Lecture 5 is missing** from the folder. L1–L4, L6 and L7 are covered. If you get L5 material, it slots between chapters 5 and 6.
+**30 marks · 1:30 hours.** Q1 has six 1-mark definitions. Then come four 6-mark questions, with an **either/or** choice between Waterfall (Q3) and Agile (Q4). Questions are tagged **CO1** (intro, life cycle models) and **CO2** (requirements, UML).
+
+## ⚠️ Known gaps
+
+- **Lecture 5 is missing** from the folder. L1–L4, L6 and L7 are covered. If you get L5 material, it slots between chapters 5 and 6.
+- **The 2025 paper asks about topics not in L1–L7:** **Agile**, **UML**, **use case diagrams**, **sequence diagrams**, **inheritance** and **structured programming**. They account for **9 compulsory marks** (Q1 ii, iv, v and Q6). Agile is the Q4 alternative, so you can avoid it by answering Waterfall. Full answers are in [Ch. 8](notes/08-mid-sem-2025-paper-solved.md). They may be in the missing L5 or a later OO-design lecture, so check with your teacher whether they are in this year's mid-sem.
 
 ## About the source files
 
@@ -40,6 +46,8 @@ The four `.md` files in `source/` are **raw OCR dumps of the lecture slides** �
 - [ ] Functional independence — why high cohesion + low coupling
 - [ ] DFD symbols, levels (context/level-0, level-1, …), balancing, data dictionary
 - [ ] Structure charts; transform vs transaction analysis
+- [ ] **2025 paper:** software crisis (1960s) · Agile model + manifesto · SRS organization **with an example** · "Renew book" use case + **sequence diagram**
+- [ ] One-line definitions: feasibility study, structured programming, decision tree, inheritance, UML, functional requirements
 
 ## The two facts most likely to be asked
 

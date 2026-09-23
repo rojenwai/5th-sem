@@ -224,4 +224,4 @@ $$B_{ss} = M \times B = 16 \times 100\ \text{kHz} = \boxed{1600\ \text{kHz} = 1.
 
 ---
 
-**Previous:** [← 12. xDSL](12-xdsl.md) · **Back to:** [Data Communication index](../README.md)
+**Previous:** [← 12. xDSL](12-xdsl.md) · **Next:** [14. Unit Test 1 — Solved →](14-unit-test-1-solved.md)

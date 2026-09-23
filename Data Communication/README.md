@@ -35,6 +35,11 @@
 | 12 | [xDSL](notes/12-xdsl.md) | `DSL.pdf`, `DSL_notes.docx` |
 | 13 | [Spread Spectrum](notes/13-spread-spectrum.md) | `Spread_Spectrum.pdf` |
 
+### Practice
+| # | Chapter | Source |
+|---|---|---|
+| 14 | [Unit Test 1 — Solved](notes/14-unit-test-1-solved.md) ⭐ *the teacher's question pattern* | `test 1.jpeg` |
+
 ## ⚠️ Not in the mid-term syllabus
 
 These files are in `source/` but have **no notes** — they are outside the mid-term syllabus. Keep them for the end-semester exam.
@@ -73,6 +78,10 @@ These files are in `source/` but have **no notes** — they are outside the mid-
 - [ ] xDSL types, ADSL frequency bands
 - [ ] FHSS and DSSS, processing gain
 
+**Practice**
+- [ ] [Unit Test 1](notes/14-unit-test-1-solved.md): redo all 6 without looking. Q4 (Shannon, *per minute*) was marked wrong on the sheet.
+- [ ] Performance formulas: period ↔ frequency, throughput, propagation time, transmission time
+
 ## Formula sheet
 
 | Formula | Name | Use |
@@ -90,3 +99,8 @@ These files are in `source/` but have **no notes** — they are outside the mid-
 | $BW_{FM} = 2(\Delta f + f_m)$ | **Carson's rule** | |
 | $2^r \ge d + r + 1$ | Hamming | Number of redundant bits |
 | $G_p = B_{ss}/B$ | Processing gain | Spread spectrum |
+| $s = d_{min}-1$, $\ t = \lfloor (d_{min}-1)/2 \rfloor$ | Hamming distance | Errors detectable / correctable |
+| $f = 1/T$ | Frequency / period | Watch units: ms → s, Hz → kHz |
+| $T_p = \text{distance}/\text{speed}$ | Propagation time | Unit Test Q6 |
+| $T_t = \text{bits}/\text{bandwidth}$ | Transmission time | Unit Test Q6; MB × 8 → bits |
+| $\text{Throughput} = \text{bits delivered}/\text{time}$ | Throughput | ≠ bandwidth (Unit Test Q5) |

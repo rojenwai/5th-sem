@@ -342,4 +342,4 @@ Each transaction type becomes a **separate module** invoked by a **dispatcher** 
 
 ---
 
-**Previous:** [← 6. Software Design Fundamentals](06-software-design-fundamentals.md) · **Back to:** [SE index](../README.md)
+**Previous:** [← 6. Software Design Fundamentals](06-software-design-fundamentals.md) · **Next:** [8. Mid-Sem 2025 Paper — Solved →](08-mid-sem-2025-paper-solved.md)

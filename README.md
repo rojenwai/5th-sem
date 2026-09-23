@@ -7,8 +7,8 @@ Chapter-wise notes for the mid-term examination, written from the class material
 | Subject | Notes | Syllabus | Status |
 |---|---|---|---|
 | [Optimization](Optimization/) | [10 chapters](Optimization/notes/) | Up to **Duality** | ✅ Complete |
-| [Data Communication](Data%20Communication/) | [13 chapters](Data%20Communication/notes/) | Units 1–3 | ✅ Complete |
-| [Software Engineering](SE/) | [7 chapters](SE/notes/) | No syllabus file — scoped to lectures | ✅ Complete |
+| [Data Communication](Data%20Communication/) | [13 chapters + solved unit test](Data%20Communication/notes/) | Units 1–3 | ✅ Complete |
+| [Software Engineering](SE/) | [7 chapters + solved 2025 mid-sem](SE/notes/) | No syllabus file — scoped to lectures | ✅ Complete |
 | [Compiler Design](CD/) | [9 chapters](CD/notes/) | NFA/DFA → Predictive Parsing | ✅ Complete |
 | [Operating Systems](OS/) | [22 chapters](OS/notes/) | Process → Deadlock | ✅ Complete |
 
@@ -42,7 +42,7 @@ Each chapter follows the same shape, so you always know where to look:
 ## Known gaps
 
 - **OS** — no class material supplied; notes written from the **topic list you provided** (saved in `OS/source/midterm-syllabus.txt`) using standard OS theory. Each OS file carries a banner saying so. Two conventions to confirm against your class notes: **lower number = higher priority**, and the Round Robin queue rule (a new arrival is enqueued **before** a process preempted at the same instant).
-- **SE** — Lecture 5 is missing from the folder; L1–L4, L6, L7 are covered.
+- **SE** — Lecture 5 is missing from the folder; L1–L4, L6, L7 are covered. The **2025 mid-sem paper** asks about Agile, UML, use-case/sequence diagrams and inheritance, none of which are in L1–L7. They are answered in full in [SE ch. 8](SE/notes/08-mid-sem-2025-paper-solved.md).
 - **CD** — no class material supplied; notes written from the syllabus using standard compiler theory. Each CD file carries a banner saying so.
 - **Data Communication** — `topology.pdf`, `Switching.pdf` and `guided_unguided.pdf` are **outside** the mid-term syllabus, so they have no notes. They remain in `source/` for the end-semester exam.
 
@@ -53,7 +53,9 @@ Each chapter follows the same shape, so you always know where to look:
 - [ ] Data Communication — Unit 1 (ch. 1–3)
 - [ ] Data Communication — Unit 2 (ch. 4–6)
 - [ ] Data Communication — Unit 3 (ch. 7–13)
+- [ ] Data Communication — [Unit Test 1, solved](Data%20Communication/notes/14-unit-test-1-solved.md) *(the teacher's question pattern)*
 - [ ] Software Engineering — all 7 chapters
+- [ ] Software Engineering — [2025 mid-sem paper, solved](SE/notes/08-mid-sem-2025-paper-solved.md) *(last year's actual paper)*
 - [ ] Compiler Design — all 9 chapters
 - [ ] Operating Systems — chapters 1–9 (process & CPU scheduling)
 - [ ] Operating Systems — chapters 10–13 (system calls, PCB, fork/exec, threads)
