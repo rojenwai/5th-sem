@@ -1,6 +1,6 @@
 # 9. Predictive Parsing — LL(1)
 
-> ⚠️ **Written from standard course knowledge.** No class material was supplied for Compiler Design.
+> ✅ **Checked against the class notes** (`Compiler notes.pdf`). Definitions, rules and notation match. The teacher's own worked examples are in [Ch. 10](10-class-notes-worked-examples.md).
 > **Syllabus:** *predictive parsing*
 
 ---
@@ -362,4 +362,4 @@ Fill the blank entries with **specific error routines** that **insert, delete or
 
 ---
 
-**Previous:** [← 8. FIRST & FOLLOW](08-first-and-follow.md) · **Back to:** [Compiler Design index](../README.md)
+**Previous:** [← 8. FIRST & FOLLOW](08-first-and-follow.md) · **Next:** [10. Class Notes — Worked Examples →](10-class-notes-worked-examples.md)

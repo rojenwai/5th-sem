@@ -1,6 +1,6 @@
 # 5. Lexical Analysis & a Lex Program
 
-> ⚠️ **Written from standard course knowledge.** No class material was supplied for Compiler Design.
+> ✅ **Checked against the class notes** (`Compiler notes.pdf`). Definitions, rules and notation match. The teacher's own worked examples are in [Ch. 10](10-class-notes-worked-examples.md).
 > **Syllabus:** *a lex program*
 
 ---

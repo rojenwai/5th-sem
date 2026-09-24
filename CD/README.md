@@ -2,9 +2,7 @@
 
 > **Mid syllabus:** NFA, DFA, their conversion, their construction from given string, eliminating left recursion, predictive parsing, a lex program, eliminating ambiguity, FIRST & FOLLOW.
 
-> ⚠️ **No class material was supplied for this subject** — the `source/` folder contains only the syllabus file. These notes are written from **standard, well-established compiler theory** covering exactly the syllabus topics. Every chapter carries a banner saying so.
->
-> When you upload your class notes, these can be checked against them — the topics are stable, but your teacher's **notation and preferred worked examples** may differ.
+> ✅ **Class notes received:** `source/Compiler notes.pdf` (22 pages). Pages 1–20 are handwritten class notes and pages 21–22 are the **Jan–June 2026 mid-sem paper**. Chapters 1–9 were checked against the class notes, and their definitions, rules and notation match. The teacher's own worked examples are collected in **Ch. 10**, and the paper is solved in **Ch. 11**.
 
 ## Chapters
 
@@ -19,6 +17,14 @@
 | 7 | [Eliminating Left Recursion & Left Factoring](notes/07-left-recursion-and-left-factoring.md) | **eliminating left recursion** |
 | 8 | [FIRST & FOLLOW](notes/08-first-and-follow.md) | **FIRST & FOLLOW** |
 | 9 | [Predictive Parsing (LL(1))](notes/09-predictive-parsing-ll1.md) | **predictive parsing** |
+| 10 | [Class Notes — Worked Examples](notes/10-class-notes-worked-examples.md) ⭐ *the teacher's examples* | all of the above |
+| 11 | [Mid-Sem Paper (Jan–June 2026) — Solved](notes/11-mid-sem-2026-paper-solved.md) ⭐ *the latest actual paper* | all of the above |
+
+## Exam pattern (from the 2026 paper)
+
+**30 marks · 1:30 hours.** Q1 has six 1-mark MCQs or short answers. Then come four 6-mark questions made of 1–4 mark parts: **Thompson + subset construction (4)**, left factoring, **a Lex program (3)**, left recursion, an ambiguity check, the lexer structure, phases/passes, and a **full FIRST/FOLLOW/LL(1) table (6)**. The Q1 one-liners also reach beyond the syllabus (optimisation, register allocation, three-address code, symbol table). See Ch. 11.
+
+> ⚠️ **Not in the mid syllabus:** bottom-up parsing, reductions and handles appear in the class notes (pp. 17–18). They are summarised in [Ch. 10 §11](notes/10-class-notes-worked-examples.md) for the end-semester exam.
 
 ## How the chapters connect
 
@@ -61,6 +67,10 @@ graph LR
 - [ ] Compute **FIRST** and **FOLLOW** sets
 - [ ] Construct an **LL(1) parsing table**; detect conflicts
 - [ ] **Trace a parse** using the stack
+- [ ] Class examples: Thompson NFA for `a*b|b*` and `(a|b)*abb`; the **A–E subset table** for `(a|b)*abb` ([Ch. 10](notes/10-class-notes-worked-examples.md))
+- [ ] Structure of the generated lexical analyser (automaton simulator) + grouping phases into passes ($m 	imes n$ vs $m + n$)
+- [ ] Dangling else → the **matched/open** grammar
+- [ ] [2026 paper](notes/11-mid-sem-2026-paper-solved.md): redo Q2a and Q5 without looking. Q5 is **not LL(1)**; spot the conflict.
 
 ## The rules worth memorising
 

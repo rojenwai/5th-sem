@@ -1,6 +1,6 @@
 # 1. Compiler Phases — Overview
 
-> ⚠️ **Written from standard course knowledge.** No class material was supplied for Compiler Design — the folder contained only the syllabus. Check notation against your teacher's notes when you get them.
+> ✅ **Checked against the class notes** (`Compiler notes.pdf`). Definitions, rules and notation match. The teacher's own worked examples are in [Ch. 10](10-class-notes-worked-examples.md).
 >
 > **Purpose of this chapter:** orientation. It is not itself a syllabus topic, but it shows *where* the syllabus topics sit, which makes the rest far easier to follow.
 

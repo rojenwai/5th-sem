@@ -1,6 +1,7 @@
 # 7. Function-Oriented Software Design
 
 > **Lecture:** L7 (09-09-2026) · **Source:** `Lecture 7 Function Oriented Design-Prahlad-NIT-CS3501.md`
+> **Continued in [Ch. 8](08-structured-design-examples-and-structure-charts.md)** (L7b, 15–18-09-2026): the TAS example, DFD guidelines and common errors, DFD shortcomings, and full structure-chart and transform/transaction-analysis examples.
 
 ---
 
@@ -151,7 +152,9 @@ The whole system appears as a **single bubble**.
 
 ### How long to decompose?
 
-Decomposition of a bubble should be carried on **until a level is reached at which the function of the bubble can be described using a simple algorithm** — i.e. until the bubbles become **atomic/primitive** and further splitting adds nothing.
+Decomposition of a bubble should be carried on **until a level is reached at which the function of the bubble can be represented using a simple set of instructions**, i.e. until the bubbles become **atomic/primitive** and further splitting adds nothing.
+
+> **(L7b)** For **simple problems**, decomposition up to **level 1** should suffice. **Large, industry-standard problems** may need decomposition up to **level 3 or level 4**. **Rarely, if ever,** is decomposition **beyond level 4** needed.
 
 ---
 
@@ -236,12 +239,14 @@ The output of Structured Design. A **structure chart** represents the **control 
 
 | Symbol | Meaning |
 |---|---|
-| **Rectangle** | A **module** |
-| **Arrow between modules** | **Invocation** — the calling relationship |
-| **Small arrow with an empty circle** (⟳) | **Data flow** passed between modules |
-| **Small arrow with a filled circle** | **Control flow / flag** passed between modules |
-| **Diamond** | **Selection** — one of several modules is invoked |
-| **Loop around arrows** | **Repetition** — modules invoked repeatedly |
+| **Rectangle** | A **module**, annotated with its name |
+| **Arrow between modules** | **Module invocation**: during execution, control passes from one module to the other in the direction of the arrow |
+| **Small arrow alongside an invocation arrow** | **Data flow**: data passed from one module to another in the direction of the small arrow |
+| **Rectangle with double side edges** | **Library module**, i.e. a frequently called module such as `Quick-sort` |
+| **Diamond** | **Selection**: one of several connected modules is invoked, depending on a condition |
+| **Loop around arrows** | **Repetition**: the modules are invoked repeatedly |
+
+> 📌 The textbook convention also marks data couples with an **empty-circle tail** and control flags with a **filled-circle tail**. The lecture slides draw data flow as a plain small arrow. Either is accepted. Full rules and examples are in [Ch. 8](08-structured-design-examples-and-structure-charts.md).
 
 ### DFD vs Structure Chart ⭐⭐
 
@@ -249,12 +254,14 @@ The output of Structured Design. A **structure chart** represents the **control 
 |---|---|---|
 | Produced by | **Structured Analysis** | **Structured Design** |
 | Shows | **Data flow** among processing activities | **Control hierarchy** — which module calls which |
-| Shows invocation order? | ❌ **No** | ✅ **Yes** |
-| Shows decisions/loops? | ❌ No | ✅ Yes |
+| Shows invocation order? | ❌ **No** | ❌ **No** *(L7b: "we cannot tell the order in which the different modules are invoked")* |
+| Shows who calls whom? | ❌ No | ✅ **Yes**, via module dependency |
+| Shows decisions/loops? | ❌ No control information at all | Only coarsely: a **diamond** (selection) and a **loop arc** (repetition) |
 | Shape used | **Circles (bubbles)** | **Rectangles (modules)** |
 | Represents | **What** the system does | **How** it is structured |
 
-> ⭐ **The key limitation of a DFD to remember:** a **DFD does not show the order in which activities are carried out**, nor any decision or looping logic. That is precisely why the structure chart is needed.
+> ⭐ **The key limitation of a DFD to remember:** a **DFD does not represent control information**. It does not show *when* or *in what order* functions are invoked, or the *conditions* under which they are invoked.
+> ⚠️ **A structure chart does not show order either.** From a structure chart you cannot tell whether a module calls another **once or many times**, nor the **order** in which modules are invoked. Procedural aspects are not represented. See [Ch. 8 §5](08-structured-design-examples-and-structure-charts.md).
 
 ---
 
@@ -337,9 +344,9 @@ Each transaction type becomes a **separate module** invoked by a **dispatcher** 
 - **Balancing:** data flowing into/out of a bubble **must match** the data flows at the next level.
 - **A DFD is always accompanied by a data dictionary** listing all data items and defining composite items in terms of their components. Notation: `=` `+` `[|]` `{}` `()`.
 - **Structure chart** = control hierarchy, rectangles = modules, arrows = invocation.
-- ⚠️ **A DFD does NOT show the order of execution, decisions or loops** — that is the structure chart's job.
+- ⚠️ **A DFD does NOT represent control information:** no order of execution, no conditions. A **structure chart does not show invocation order either**, nor how many times a module is called.
 - **DFD → Structure Chart:** **Transform analysis** (afferent → central transform → efferent) or **Transaction analysis** (a transaction centre routing to separate modules).
 
 ---
 
-**Previous:** [← 6. Software Design Fundamentals](06-software-design-fundamentals.md) · **Next:** [8. Mid-Sem 2025 Paper — Solved →](08-mid-sem-2025-paper-solved.md)
+**Previous:** [← 6. Software Design Fundamentals](06-software-design-fundamentals.md) · **Next:** [8. Structured Design — Examples & Structure Charts →](08-structured-design-examples-and-structure-charts.md)
