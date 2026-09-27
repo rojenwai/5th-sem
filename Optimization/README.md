@@ -6,6 +6,8 @@
 
 That last instruction matters — [Chapter 10](notes/10-assignment-question-bank.md) works through every question in the assignment.
 
+> ⭐ **The teacher mainly sets exam questions from the class notes.** [Chapter 11](notes/11-class-notes-question-bank.md) solves **every example, question and practice problem in Class Notes 1–5**, with full simplex tables checked against the teacher's answers. It also solves the problems the notes state but never solve (🆕 Big-M Ex 2 and duality Practice Problems 1–4). **Make Ch. 11 your main revision source**, with Ch. 10 second.
+
 ## Chapters
 
 | # | Chapter | Source |
@@ -20,6 +22,7 @@ That last instruction matters — [Chapter 10](notes/10-assignment-question-bank
 | 8 | [Revised Simplex Method](notes/08-revised-simplex-method.md) | Class Note 4 |
 | 9 | [Duality](notes/09-duality.md) | Class Note 5 |
 | 10 | [Assignment Question Bank (solved)](notes/10-assignment-question-bank.md) | `optimization__assignment_I.pdf` |
+| 11 | [**Class Notes Question Bank (solved)**](notes/11-class-notes-question-bank.md) ⭐ | All five class notes |
 
 ## Source files
 
@@ -34,6 +37,17 @@ That last instruction matters — [Chapter 10](notes/10-assignment-question-bank
 
 ## Revision checklist
 
+**Class-notes questions (highest priority — the teacher sets exams from these; see [Ch. 11](notes/11-class-notes-question-bank.md))**
+- [ ] Formulate: shopkeeper, diet, lamps, tyres
+- [ ] Basic solutions: Class Note 1 Ex 6–10 (including "show this is **not** a basic solution")
+- [ ] Graphical: Ex 11 (min, $Z = 240$) and Ex 12 (max, $Z = 325500$)
+- [ ] Reduce F.S. → B.F.S.: Class Note II Ex 2, 3, 5 (two answers) and 4/6 (tie → degenerate)
+- [ ] Simplex: Class Notes III Ex 1–5 (1000 · 765/41 · −11 · 6 · 3600)
+- [ ] Big-M: Ex 1 (52, alternative optima) · 🆕 Ex 2 (**infeasible**)
+- [ ] Revised simplex: Ex 1 (5) · Ex 2 (13/7)
+- [ ] Duality: Ex 1–4 · 🆕 Practice Problems 1–4
+
+**General**
 - [ ] Can classify an optimization problem (linear / nonlinear / integer / convex …)
 - [ ] Can formulate a word problem into an LPP
 - [ ] Know: solution vs feasible solution vs basic solution vs BFS vs optimal BFS

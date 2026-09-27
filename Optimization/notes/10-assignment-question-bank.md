@@ -491,4 +491,4 @@ What the assignment tells you about the exam:
 
 ---
 
-**Previous:** [← 9. Duality](09-duality.md) · **Back to:** [Optimization index](../README.md)
+**Previous:** [← 9. Duality](09-duality.md) · **Next:** [11. Class Notes Question Bank →](11-class-notes-question-bank.md)

@@ -2,6 +2,8 @@
 
 > **Syllabus:** *"For the Simplex Method and Revised Simplex Method portion, study **only from the class notes**."*
 > **Source:** `Optimization _Class Note_II.pdf`, `OPtimization_class_notes_III.pdf`
+>
+> ⭐ **Practise the class's own examples.** The worked example in §7 below is a textbook one. All six simplex examples from Class Notes III, with every table, are in [Ch. 11 Part C](11-class-notes-question-bank.md). The teacher sets questions from those.
 
 ---
 

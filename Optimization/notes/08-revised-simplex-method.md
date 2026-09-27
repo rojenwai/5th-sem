@@ -2,6 +2,8 @@
 
 > **Syllabus:** *"For the Simplex Method and Revised Simplex Method portion, study **only from the class notes**."*
 > **Source:** `optimization IV.pdf` (Class Notes IV)
+>
+> ⭐ The class's **Revised Simplex Example 2** (Max $2x_1 + x_2$, answer $13/7$) is worked in revised format in [Ch. 11 §D4](11-class-notes-question-bank.md).
 
 ---
 

@@ -2,6 +2,8 @@
 
 > **Syllabus:** *Simplex portion: study only from the class notes*
 > **Source:** `OPtimization_class_notes_III.pdf`, `optimization IV.pdf` (Class Notes IV)
+>
+> ⭐ **Practise the class's own examples.** The worked example in §5 below is a textbook one. The class's Big-M Example 1, the unsolved Big-M Example 2 (it is **infeasible**) and the Class Notes III artificial-variable illustration are solved in [Ch. 11 Part C–D](11-class-notes-question-bank.md).
 
 ---
 

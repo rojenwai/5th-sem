@@ -6,7 +6,7 @@ Chapter-wise notes for the mid-term examination, written from the class material
 
 | Subject | Notes | Syllabus | Status |
 |---|---|---|---|
-| [Optimization](Optimization/) | [10 chapters](Optimization/notes/) | Up to **Duality** | ✅ Complete |
+| [Optimization](Optimization/) | [9 chapters + 2 solved question banks](Optimization/notes/) | Up to **Duality** | ✅ Complete |
 | [Data Communication](Data%20Communication/) | [13 chapters + solved unit test](Data%20Communication/notes/) | Units 1–3 | ✅ Complete |
 | [Software Engineering](SE/) | [8 chapters + solved 2025 mid-sem](SE/notes/) | No syllabus file — scoped to lectures | ✅ Complete |
 | [Compiler Design](CD/) | [9 chapters + class examples + solved 2026 mid-sem](CD/notes/) | NFA/DFA → Predictive Parsing | ✅ Complete |
@@ -48,7 +48,8 @@ Each chapter follows the same shape, so you always know where to look:
 
 ## Revision checklist
 
-- [ ] Optimization — all 10 chapters
+- [ ] Optimization — chapters 1–9
+- [ ] Optimization — ⭐ [class notes question bank](Optimization/notes/11-class-notes-question-bank.md) *(the teacher mainly sets exam questions from the class notes; every example is solved here)*
 - [ ] Optimization — [assignment question bank](Optimization/notes/10-assignment-question-bank.md) *(teacher said to study this question pattern)*
 - [ ] Data Communication — Unit 1 (ch. 1–3)
 - [ ] Data Communication — Unit 2 (ch. 4–6)
