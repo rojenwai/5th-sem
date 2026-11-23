@@ -64,3 +64,15 @@ Each chapter follows the same shape, so you always know where to look:
 - [ ] Operating Systems — chapters 14–18 (synchronization & semaphores)
 - [ ] Operating Systems — chapters 19–21 (deadlock)
 - [ ] Operating Systems — [numerical problem bank](OS/notes/22-numerical-problem-bank.md)
+
+## Contributing
+
+Contributions to improve these revision notes are welcome.
+
+If you find an error, missing explanation, incorrect formula, or incomplete solution, feel free to:
+
+- Open an issue describing the problem.
+- Submit a pull request with corrections.
+- Suggest additional examples or improvements.
+
+All contributions should maintain the existing chapter-wise structure and clarity of the notes.
