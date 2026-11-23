@@ -776,4 +776,4 @@ $$
 
 ---
 
-**Previous:** [← 10. Assignment Question Bank](10-assignment-question-bank.md) · **Back to:** [Optimization index](../README.md)
+**Previous:** [← 10. Assignment Question Bank](10-assignment-question-bank.md) · **Next (after-mid):** [12. Transportation Problem →](12-transportation-problem.md) · **Back to:** [Optimization index](../README.md)

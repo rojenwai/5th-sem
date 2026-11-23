@@ -1,6 +1,6 @@
 # 12. Process Creation — fork() and exec()
 
-> ⚠️ **Written from standard course knowledge.** No class material was supplied for Operating Systems.
+> ✅ **Topics checked against the class notes** (`Rati OS FULL.pdf` pp. 1–64; also `Rati-OS 1.pdf`, `bhaves_os_notes.pdf`). The class covers exactly these topics. Explanations are written from standard OS theory; class-specific examples are collected in [Ch. 22](22-numerical-problem-bank.md).
 > **Syllabus:** *Process creation · Parent and child process · Resource sharing alternatives · Execution alternatives · fork() · exec()*
 
 ---

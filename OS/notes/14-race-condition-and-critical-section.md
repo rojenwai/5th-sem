@@ -1,6 +1,6 @@
 # 14. IPC, Race Conditions & the Critical Section Problem
 
-> ⚠️ **Written from standard course knowledge.** No class material was supplied for Operating Systems.
+> ✅ **Topics checked against the class notes** (`Rati OS FULL.pdf` pp. 1–64; also `Rati-OS 1.pdf`, `bhaves_os_notes.pdf`). The class covers exactly these topics. Explanations are written from standard OS theory; class-specific examples are collected in [Ch. 22](22-numerical-problem-bank.md).
 > **Syllabus:** *Interprocess communication and synchronization · Race condition · Critical section · Process synchronization · Requirements of a synchronization mechanism — primary (mutual exclusion, progress), secondary (bounded waiting, portability/architectural neutrality) · Types — busy waiting, no busy waiting*
 
 ---

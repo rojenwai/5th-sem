@@ -1,6 +1,6 @@
 # 22. Numerical Problem Bank (Fully Solved)
 
-> ⚠️ **Written from standard course knowledge.** No class material was supplied for Operating Systems.
+> ✅ **Topics checked against the class notes** (`Rati OS FULL.pdf` pp. 1–64; also `Rati-OS 1.pdf`, `bhaves_os_notes.pdf`). The class covers exactly these topics. Explanations are written from standard OS theory; class-specific examples are collected in [Ch. 22](22-numerical-problem-bank.md).
 > **Scope:** every numerical type in the syllabus, solved end to end.
 
 ---
@@ -527,6 +527,31 @@ $(0,2,0) \le Need_3 = (7,3,3)$ ✅, but $(0,2,0) \le Available = (3,1,2)$? **B: 
 
 ---
 
+## Problem 17 — Class examples from `Rati OS FULL.pdf` (re-computed) ⭐⭐⭐
+
+| Page | Problem | Answer |
+|---|---|---|
+| p. 14 | **FCFS with overhead** δ = 1 (6 processes, ΣBT = 17, 6 switches) | CPU inefficiency = 6/23, **efficiency = 17/23 ≈ 73.9 %** |
+| p. 17 | **Exponential average**, α = 0.5, τ₁ = 10, actual t = 4, 8, 6, 7 | τ₂ = 7, τ₃ = 7.5, τ₄ = 6.75, **τ₅ = 6.875** |
+| p. 18 | **SRTF**, 6 processes (AT 0–5; BT 7, 5, 3, 1, 2, 1) | Σ WT = 24, **avg WT = 4** |
+| p. 19 | 3 processes at t = 0 with total times 10, 20, 30; each 20 % I/O, 70 % CPU, 10 % I/O (FCFS) | CT 10, 25, 47; **avg WT ≈ 13.3**; CPU busy 42/47 = **89.36 %**, idle 10.64 % |
+| p. 20 | **Preemptive priority** (higher number = higher priority) | avg WT 80/7 ≈ 11.43, avg RT 20/7 (see [Ch. 8](08-priority-scheduling.md)) |
+| p. 21 | Priority with I/O (lower number = higher priority) | **avg WT = 18/3 = 6**, avg RT = 0, idle time 4 |
+| p. 22 | **Round Robin**, q = 2 (AT 0, 1, 2, 3, 4, 6; BT 4, 5, 2, 1, 6, 3) | CT 8, 18, 6, 9, 21, 19 · **avg WT 44/6 = 7.33**, **avg RT 20/6 = 3.33** |
+| p. 23 | Round Robin, q = 3 (AT 5, 4, 3, 1, 2, 6; BT 5, 6, 7, 9, 2, 3; CPU idle 0–1) | CT 32, 27, 33, 30, 6, 21 · **avg WT 96/6 = 16** · **avg RT 32/6 ≈ 5.33** ⚠️ |
+| p. 24 | RR with context switch $s$: every process must get the CPU at least once every $t$ seconds | $n s + (n-1) q \le t \Rightarrow q \le \dfrac{t - ns}{n-1}$ |
+| p. 24 | FCFS, A–D at t = 0 with BT $t, t+1, t+2, t+3$ | **avg WT = $\tfrac32 t + 1$**, avg TAT = $\tfrac52 t + \tfrac52$ |
+| p. 25–26 | FCFS: a 5-cycle process every multiple of 10, a 7-cycle process every multiple of 11, from cycle 10; P wins ties; first 14 processes | **avg WT = 91/14 = 6.5**, **avg TAT = 175/14 = 12.5** |
+| p. 52 | Counting semaphore = 10, then 6 P() and 4 V() | $10 - 6 + 4 =$ **8** |
+| pp. 57–58 | Minimum resources to avoid deadlock | 3 × 2 → **4** · (7, 4, 9, 2, 5) → **22 / 23** (see [Ch. 19 §6½](19-deadlock-and-necessary-conditions.md)) |
+
+> ✅ **Round Robin convention confirmed by the class example (p. 22):** a process that **arrives** at the same instant another is preempted joins the queue **before** the preempted one. Only that ordering reproduces the class answers (WT 44, RT 20). The opposite order gives WT 42, RT 24.
+>
+> ⚠️ p. 26 writes the average WT as "7.5". The table's own column total is 91, and 91/14 = **6.5**.
+> ⚠️ p. 23 writes "avg response time = 22/6". The RT column in the same table (10, 5, 3, 0, 2, 12) sums to **32**, so the average is 32/6 ≈ **5.33**.
+
+---
+
 ## ⚡ The formula sheet
 
 $$TAT = CT - AT \qquad WT = TAT - BT \qquad RT = (\text{first CPU allocation}) - AT$$
@@ -540,4 +565,4 @@ $$\textbf{Need} = \textbf{Max} - \textbf{Allocation} \qquad \text{Available}_j =
 
 ---
 
-**Previous:** [← 21. RAG, Detection & Recovery](21-rag-detection-and-recovery.md) · **Back to:** [OS index](../README.md)
+**Previous:** [← 21. RAG, Detection & Recovery](21-rag-detection-and-recovery.md) · **Next (after-mid):** [23. Memory Management, Linker & Loader →](23-memory-management-linker-loader.md) · **Back to:** [OS index](../README.md)
