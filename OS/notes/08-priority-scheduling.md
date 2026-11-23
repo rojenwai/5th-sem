@@ -1,6 +1,6 @@
 # 8. Priority Scheduling (Preemptive & Non-preemptive)
 
-> ⚠️ **Written from standard course knowledge.** No class material was supplied for Operating Systems.
+> ✅ **Topics checked against the class notes** (`Rati OS FULL.pdf` pp. 1–64; also `Rati-OS 1.pdf`, `bhaves_os_notes.pdf`). The class covers exactly these topics. Explanations are written from standard OS theory; class-specific examples are collected in [Ch. 22](22-numerical-problem-bank.md).
 > **Syllabus:** *Preemptive priority scheduling*
 
 ---
@@ -29,6 +29,12 @@ Every process carries a **priority number**; the CPU always goes to the highest-
 | **Higher number = higher priority** | Priority 5 beats priority 1. Used by some question papers and by Linux "nice" in reverse. |
 
 > ⭐ **Always write one line at the top of your answer: "Assuming lower number = higher priority."** If the question does not say, this single sentence protects the whole answer.
+
+> 📒 **What the class notes do** (`Rati OS FULL.pdf` pp. 20–21): the teacher marks **(H)** and **(L)** next to the priorities in each question, and **both** conventions appear.
+> - p. 20 (preemptive, 7 processes): `P1 = 2 (L)` … `P6 = 12 (H)`, so **higher number = higher priority**.
+> - p. 21 (with I/O bursts): `P2 = 3 (L)`, `P3 = 1 (H)`, so **lower number = higher priority**.
+>
+> So read the (H)/(L) marks first. The p. 20 example re-computed (higher number = higher priority; AT 0–6, BT 4, 2, 3, 5, 1, 4, 6; priorities 2, 4, 6, 10, 8, 12, 9): Gantt P1 P2 P3 P4 P4 P6(5–9) P4(9–12) P7(12–18) P5(18–19) P3(19–21) P2(21–22) P1(22–25). CT = 25, 22, 21, 12, 19, 9, 18 · **Σ WT = 80 → avg 80/7 ≈ 11.43** · **Σ RT = 20 → avg 20/7 ≈ 2.86**. *(The "20/7" written under "Average WT" on p. 20 is the response-time average.)*
 
 ### Where do priorities come from?
 

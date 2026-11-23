@@ -1,6 +1,6 @@
 # 1. Types of Operating Systems
 
-> ⚠️ **Written from standard course knowledge.** No class material was supplied for Operating Systems.
+> ✅ **Topics checked against the class notes** (`Rati OS FULL.pdf` pp. 1–64; also `Rati-OS 1.pdf`, `bhaves_os_notes.pdf`). The class covers exactly these topics. Explanations are written from standard OS theory; class-specific examples are collected in [Ch. 22](22-numerical-problem-bank.md).
 > **Syllabus:** *Types of OS (only brief one sentence definition) — Batch, Time sharing/Multiprogramming, Multiprocessing, Distributed, Network, Real-time, Embedded*
 
 ---

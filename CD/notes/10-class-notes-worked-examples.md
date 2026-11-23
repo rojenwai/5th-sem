@@ -517,7 +517,7 @@ The class trace of `id + id * id` is identical to the one in [Ch. 9 §6](09-pred
 
 ## 11. Bottom-up parsing, reduction, handles
 
-> ⚠️ **Beyond the mid-term syllabus**, which ends at predictive parsing. It is in the class notes, so here it is in brief.
+> ⚠️ **Beyond the mid-term syllabus**, which ends at predictive parsing. It is in the class notes, so here it is in brief. **For the end-sem, the full treatment is in [Ch. 12 (bottom-up & handles)](12-bottom-up-parsing-and-handles.md), [Ch. 13 (LR(0) items)](13-lr0-items-closure-goto.md) and [Ch. 14 (SLR(1))](14-slr1-parsing.md).**
 
 **Bottom-up parsing** constructs the parse tree for an input string **starting at the leaves and working up towards the root**.
 
@@ -541,6 +541,31 @@ $$\underbrace{E \Rightarrow T \Rightarrow T*F \Rightarrow T*\texttt{id} \Rightar
 | $T$ | $T$ | $E \to T$ |
 
 > 💡 In $T * \texttt{id}_2$ the handle is $\texttt{id}_2$, **not** $T$. Reducing $T \to E$ there would leave $E * \texttt{id}$, which cannot be reduced to the start symbol. A handle is a substring whose reduction leads back towards $S$ along a rightmost derivation.
+
+---
+
+## 12. Extra example from `Rati CD full.pdf` (p. 10): Thompson NFA for $(ab \mid a^*)^*$
+
+The full-semester notes add one more Thompson example. The handwritten drawing is hard to follow, so here is the standard construction (11 states, 0–10):
+
+| Piece | Edges |
+|---|---|
+| $ab$ | $2 \xrightarrow{a} 3 \xrightarrow{b} 4$ |
+| $a^*$ | $5 \xrightarrow{\varepsilon} 6$, $6 \xrightarrow{a} 7$, $7 \xrightarrow{\varepsilon} 6$ (repeat), $7 \xrightarrow{\varepsilon} 8$, $5 \xrightarrow{\varepsilon} 8$ (skip) |
+| union $ab \mid a^*$ | $1 \xrightarrow{\varepsilon} 2$, $1 \xrightarrow{\varepsilon} 5$, $4 \xrightarrow{\varepsilon} 9$, $8 \xrightarrow{\varepsilon} 9$ |
+| outer star | $0 \xrightarrow{\varepsilon} 1$, $9 \xrightarrow{\varepsilon} 1$ (repeat), $9 \xrightarrow{\varepsilon} 10$, $0 \xrightarrow{\varepsilon} 10$ (skip) |
+
+Start state 0, final state **10**.
+
+**Subset construction:**
+
+| DFA state | NFA states | on `a` | on `b` | Final? |
+|---|---|---|---|---|
+| **A** = ε-closure(0) | {0, 1, 2, 5, 6, 8, 9, 10} | B | ∅ (dead) | ✔ (contains 10) |
+| **B** | {1, 2, 3, 5, 6, 7, 8, 9, 10} | B | C | ✔ |
+| **C** | {1, 2, 4, 5, 6, 8, 9, 10} | B | ∅ (dead) | ✔ |
+
+**Language:** $(ab \mid a^*)^* = (a \mid ab)^*$, i.e. **every `b` is immediately preceded by an `a`** (which includes ε). For example, `aab` and `abab` are accepted, while `b` and `abb` are rejected.
 
 ---
 

@@ -1,6 +1,6 @@
 # 19. Deadlock — Necessary Conditions, Handling & Prevention
 
-> ⚠️ **Written from standard course knowledge.** No class material was supplied for Operating Systems.
+> ✅ **Topics checked against the class notes** (`Rati OS FULL.pdf` pp. 1–64; also `Rati-OS 1.pdf`, `bhaves_os_notes.pdf`). The class covers exactly these topics. Explanations are written from standard OS theory; class-specific examples are collected in [Ch. 22](22-numerical-problem-bank.md).
 > **Syllabus:** *Deadlock (with diagram) · Necessary conditions for deadlock · Deadlock handling — ignorance, prevention, avoidance, detection and recovery*
 
 ---
@@ -260,6 +260,24 @@ $$F(\text{tape drive}) = 1,\quad F(\text{disk drive}) = 5,\quad F(\text{printer}
 | **Runtime cost** | **None** | **High** — an algorithm runs on every request |
 
 > ⭐ **The clean one-liner:** *"Prevention makes deadlock structurally impossible by negating a necessary condition; avoidance allows all four conditions but uses advance knowledge to steer the system away from unsafe states."*
+
+---
+
+## 6½. Minimum resources to guarantee no deadlock (class notes pp. 57–58) ⭐⭐⭐
+
+**Question type:** $n$ processes need $x_1, x_2, \dots, x_n$ units of a single resource type $R$. What is the minimum number of units that makes deadlock **impossible**?
+
+**Worst case (the "optimal condition" in the notes):** every process has been given **all but one** of the units it needs, and all are waiting for that last unit. That is deadlock with $\sum (x_i - 1)$ units. **One more unit** lets some process finish, release everything, and the rest follow.
+
+$$\boxed{\text{Max units with deadlock possible} = \sum_{i=1}^{n}(x_i - 1) \qquad \text{Min units for no deadlock} = \sum_{i=1}^{n}(x_i - 1) + 1 = \sum x_i - n + 1}$$
+
+| Class question | Working | Answer |
+|---|---|---|
+| 3 processes, each needs 2 units of R (p. 57) | 2R or 3R: deadlock is possible (each holds 1). $3(2-1) + 1$ | **4** |
+| 5 processes need 7, 4, 9, 2, 5 (p. 58). (a) max $R$ such that deadlock **can** occur | $6 + 3 + 8 + 1 + 4$ | **22** |
+| (b) min $R$ such that **no** deadlock | $22 + 1$ | **23** |
+
+> **Same-demand shortcut:** $n$ processes each needing $k$ gives min $= n(k-1) + 1$. **Reverse form:** with $R$ units and each process needing $k$, the max $n$ that is deadlock-free is $n \le \frac{R-1}{k-1}$.
 
 ---
 
