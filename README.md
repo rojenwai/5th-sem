@@ -81,3 +81,15 @@ Each chapter follows the same shape, so you always know where to look:
 - [ ] Operating Systems — chapters 23–26 (linker/loader, fits, paging, multilevel paging)
 - [ ] Operating Systems — chapters 27–29 (page replacement, EAT, disk scheduling)
 - [ ] Operating Systems — ⭐ [end-sem numerical problem bank](OS/notes/30-end-sem-numerical-problem-bank.md)
+
+## Contributing
+
+Contributions to improve these revision notes are welcome.
+
+If you find an error, missing explanation, incorrect formula, or incomplete solution, feel free to:
+
+- Open an issue describing the problem.
+- Submit a pull request with corrections.
+- Suggest additional examples or improvements.
+
+All contributions should maintain the existing chapter-wise structure and clarity of the notes.
