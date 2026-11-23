@@ -1,0 +1,44 @@
+1. Introduction to optimization
+
+What an optimization problem is: objective function, design vector, inequality and equality constraints
+What a nonlinear programming (NLP) problem is
+
+2. Unconstrained extrema (functions of two variables)
+
+Local and absolute (global) maxima and minima
+Critical points
+Saddle points
+The Hessian and the second-derivative test (D > 0, D < 0, D = 0)
+Absolute extrema on a closed region, such as a triangle (checking interior points, vertices and edges)
+
+3. Lagrange multipliers (equality constraints)
+
+Where the method comes from: ∇f is parallel to ∇g
+Building the auxiliary function (the Lagrangian) and solving it step by step
+Bordered Hessian matrix: how to interpret it and the determinant test for constrained max/min
+Worked examples and steps for classifying a point as a local or global optimum
+
+4. Karush–Kuhn–Tucker (KKT) conditions (inequality constraints)
+
+Why we need KKT: the constrained vs unconstrained minimizer
+Feasible points, and active vs inactive constraints
+The four KKT conditions: stationarity, primal feasibility, dual feasibility, complementary slackness
+Step-by-step procedure for solving KKT problems, with worked problems and a homework set
+
+5. Convex optimization
+
+Affine sets and convex sets, with examples and counterexamples
+Convex hull, and the result that an intersection of convex sets is convex
+Convex and concave functions (strict and non-strict)
+Tests for convexity: the first-derivative test, the second-derivative test, and the Hessian test (PD, PSD, ND, NSD, indefinite), plus a summary flowchart
+Operations that preserve convexity: non-negative sums, affine substitution, pointwise maximum, scalar composition, partial minimization
+Convex optimization problems in standard form; why every local minimum is a global one
+Unconstrained stationary points, optimality with affine equality constraints, and when KKT conditions guarantee a global optimum (plus a counterexample without convexity)
+
+6. Numerical methods for nonlinear optimization
+
+Why numerical methods are needed (e.g. eˣ + 2x − 4 = 0 has no closed-form solution)
+Basic ideas: the gradient, the Hessian, iterative methods, convergence and stopping criteria (tolerance ε, maximum number of iterations)
+Newton–Raphson method: finding roots vs finding stationary points, the working procedure and worked examples
+Newton's method for two variables, and the damped Newton method
+Python code for Newton–Raphson
