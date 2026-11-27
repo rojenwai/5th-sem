@@ -1,4 +1,13 @@
-# Data Communication — Mid-Term Notes
+# Data Communication — Mid-Term & End-Term Notes
+
+| Part | Chapters | Status |
+|---|---|---|
+| **Mid-term** (Units 1–3) | [1–14](#chapters) | ✅ Complete |
+| **End-term additions** (media, switching, LANs, devices) | [15–19](#end-term-additions) | ✅ Complete. Ch. 18 (Ethernet / WLAN) ⚠️ is from standard theory: no class handout yet |
+
+> **End-term syllabus** (`source/syllabus.txt`): signals and noise · Nyquist rate · Shannon capacity · analog transmission techniques · modulation techniques · fundamentals of AM and FM · PCM · line coding · error handling techniques · multiplexing (FDM, TDM), xDSL · spread spectrum · **transmission media: guided (twisted pair, coaxial, fibre optic), unguided** · **principles of switching** · **local area networks: Ethernet, Fast Ethernet, introduction to Gigabit Ethernet and WLAN** · **hubs, bridges and switches**.
+>
+> Everything up to spread spectrum is already covered by chapters 1–13. The **bold** topics are new and are covered in chapters 15–19.
 
 > **Syllabus (Maam Bidyapati, NIT CSE, 13/09/2026):**
 >
@@ -40,15 +49,26 @@
 |---|---|---|
 | 14 | [Unit Test 1 — Solved](notes/14-unit-test-1-solved.md) ⭐ *the teacher's question pattern* | `test 1.jpeg` |
 
-## ⚠️ Not in the mid-term syllabus
+## End-term additions
 
-These files are in `source/` but have **no notes** — they are outside the mid-term syllabus. Keep them for the end-semester exam.
+| # | Chapter | Syllabus topic | Source |
+|---|---|---|---|
+| 15 | [Transmission Media: Guided & Unguided](notes/15-transmission-media.md) ⭐ | Transmission media | `guided_unguided.pdf`, `topology.pdf` pp. 67–69 |
+| 16 | [Principles of Switching](notes/16-switching.md) ⭐ | Principles of switching | `Switching.pdf` |
+| 17 | [Networks, Topologies & Reference Models](notes/17-networks-topologies-and-reference-models.md) | Background for LANs and devices (LAN/MAN/WAN, topologies, OSI, TCP/IP) | `topology.pdf` |
+| 18 | [LANs: Ethernet, Fast & Gigabit Ethernet, WLAN](notes/18-lan-ethernet-and-wlan.md) ⚠️ | Local area networks | *Standard theory*; no handout yet |
+| 19 | [Connecting Devices: Hubs, Bridges & Switches](notes/19-connecting-devices-hubs-bridges-switches.md) ⭐ | Hubs, bridges and switches | `topology.pdf` pp. 29–34, `Switching.pdf` |
 
-| File | Topic |
-|---|---|
-| `topology.pdf` (83 p) | Network topologies |
-| `Switching.pdf` | Circuit / packet / message switching |
-| `guided_unguided.pdf` | Transmission media |
+> ⚠️ **Handout typos flagged in the chapters:** fibre "uses electrical signals" (it uses **light**); radio waves "3 kHz to 1 kHz" (**3 kHz – 1 GHz**); the session layer as "layer 3" (it is **layer 5**); and "the data link layer is responsible for routing" (routing is the **network layer's** job). FDM was already covered in [Ch. 11](notes/11-multiplexing-and-tdm.md).
+
+```mermaid
+graph LR
+    A["Ch 15<br/>Media"] --> B["Ch 16<br/>Switching"]
+    B --> C["Ch 17<br/>Topologies,<br/>OSI / TCP-IP"]
+    C --> D["Ch 18<br/>Ethernet,<br/>WLAN"]
+    D --> E["Ch 19<br/>Hubs, bridges,<br/>switches"]
+    style E fill:#e0f2f1,stroke:#00897b,color:#004d40
+```
 
 ## Revision checklist
 
@@ -82,6 +102,17 @@ These files are in `source/` but have **no notes** — they are outside the mid-
 - [ ] [Unit Test 1](notes/14-unit-test-1-solved.md): redo all 6 without looking. Q4 (Shannon, *per minute*) was marked wrong on the sheet.
 - [ ] Performance formulas: period ↔ frequency, throughput, propagation time, transmission time
 
+**End-term additions**
+- [ ] Guided vs unguided; **twisted pair** (why twisted, UTP categories, STP), **coaxial** (structure, baseband vs broadband), **fibre** (core / cladding / jacket, advantages); comparison table
+- [ ] **Radio vs microwave vs infrared**; terrestrial vs satellite microwave (advantages and disadvantages)
+- [ ] Switching: **circuit** (3 phases), **message** (store-and-forward), **packet** (datagram vs virtual circuit); **circuit vs packet** table; STP
+- [ ] PAN / LAN / MAN / WAN; **bus, ring, star, tree, mesh** ($n(n-1)/2$), hybrid; **CSMA/CD vs CSMA/CA**; token passing
+- [ ] **OSI 7 layers** and functions; TCP/IP; OSI vs TCP/IP; IP / MAC / port / socket
+- [ ] **Ethernet:** CSMA/CD + backoff, **64-byte minimum frame** ($2T_pB$), frame format, MAC unicast/multicast, 10Base5/2/T/F
+- [ ] **Fast Ethernet** (TX / FX / T4, autonegotiation) · **Gigabit** (full-duplex, carrier extension, SX / LX / CX / T)
+- [ ] **WLAN 802.11:** BSS / ESS, why not CSMA/CD, **CSMA/CA with RTS/CTS**, hidden station, NAV
+- [ ] **Repeater, hub, bridge, switch, router, gateway**: layers, the **learning bridge**, **hub vs bridge vs switch**, collision and broadcast domains
+
 ## Formula sheet
 
 | Formula | Name | Use |
@@ -104,3 +135,7 @@ These files are in `source/` but have **no notes** — they are outside the mid-
 | $T_p = \text{distance}/\text{speed}$ | Propagation time | Unit Test Q6 |
 | $T_t = \text{bits}/\text{bandwidth}$ | Transmission time | Unit Test Q6; MB × 8 → bits |
 | $\text{Throughput} = \text{bits delivered}/\text{time}$ | Throughput | ≠ bandwidth (Unit Test Q5) |
+| $\dfrac{n(n-1)}{2}$ | Full-mesh links | $n$ nodes; each needs $n-1$ ports |
+| $L_{min} = 2\,T_p \times B$ | CSMA/CD minimum frame | 10 Mbps, 51.2 µs → **64 B** |
+| $K \in [0,\ 2^{n}-1]$ | Binary exponential backoff | wait $K \times$ slot time; $n \le 10$; give up after 16 |
+| $(k+n-1)\,\dfrac{L}{nR}$ | Packet-switching delay | $k$ hops, $n$ packets (vs $k\,L/R$ for message switching) |

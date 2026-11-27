@@ -12,9 +12,9 @@
 | 3 | Waterfall life cycle model | 6 | CO1 | [Ch. 2](02-software-life-cycle-models.md) ✅ |
 | 4 | *or* Agile life cycle model | 6 | CO1 | ⚠️ **Not in lectures L1–L7**, answered in full below |
 | 5 | SRS document and its organization, with an example | 6 | CO2 | [Ch. 3](03-requirements-analysis-and-srs.md) ✅ |
-| 6 | "Renew book" use case + sequence diagram | 6 | CO2 | ⚠️ **Not in lectures L1–L7** (UML), answered in full below |
+| 6 | "Renew book" use case + sequence diagram | 6 | CO2 | ✅ Covered by **L9** ([Ch. 11](11-uml-diagrams.md)); answered in full below |
 
-> ⚠️ **Coverage warning.** The 2025 paper asks about **Agile, UML, use cases, sequence diagrams and inheritance**. None of these appear in this year's lectures L1–L7. Either they come later in the course (object-oriented design), or they were in the missing **Lecture 5**. **Learn the answers below anyway**, because they carry 6 + 6 + 2 marks.
+> ⚠️ **Coverage note (updated).** The 2025 paper asks about **Agile, UML, use cases, sequence diagrams and inheritance**. None of these were in lectures L1–L7, but **UML, use cases, sequence diagrams and inheritance are now covered by Lecture 9** ([Ch. 10](10-object-oriented-concepts.md), [Ch. 11](11-uml-diagrams.md), [Ch. 12](12-object-oriented-design-and-patterns.md)). **Agile** is still not in any lecture supplied, so it may be in the missing Lecture 5. **Learn the answers below anyway**, because they carry 6 + 6 + 2 marks.
 
 ---
 
@@ -248,7 +248,7 @@ The class structure, which also matches the outline of **IEEE 830**:
 
 ## Q6. Describe the "renew book" use case of an automated library system with a diagram, and develop its sequence diagram from it. (6)
 
-> ⚠️ UML is not covered in lectures L1–L7. This is a complete answer following the standard textbook (Rajib Mall) treatment of this exact example.
+> ✅ UML is covered in **Lecture 9** (see [Ch. 11 §3 and §5](11-uml-diagrams.md), which also shows the class's own renew-book sequence diagram). This answer follows the standard textbook (Rajib Mall) treatment of this exact example.
 
 ### Use case description (2 marks)
 
@@ -359,4 +359,4 @@ sequenceDiagram
 
 ---
 
-**Previous:** [← 8. Structured Design — Examples & Structure Charts](08-structured-design-examples-and-structure-charts.md) · **Back to:** [SE index](../README.md)
+**Previous:** [← 8. Structured Design — Examples & Structure Charts](08-structured-design-examples-and-structure-charts.md) · **Next (after-mid):** [10. Object-Oriented Concepts →](10-object-oriented-concepts.md) · **Back to:** [SE index](../README.md)

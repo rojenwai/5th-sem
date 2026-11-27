@@ -1,4 +1,9 @@
-# Software Engineering — Mid-Term Notes
+# Software Engineering — Mid-Term & End-Sem Notes
+
+| Part | Chapters | Status |
+|---|---|---|
+| **Mid-term** (L1–L7b) | [1–9](#chapters) | ✅ Complete |
+| **After-mid** (L9, L9B, L10, L12, L13, L17) | [10–16](#after-mid-end-semester) | ✅ Complete, from the lecture slides |
 
 > ⚠️ **No syllabus file was supplied for this subject.** These notes are scoped to the **lectures actually present** in `source/`. If your teacher gives a syllabus, check it against this chapter list.
 
@@ -18,6 +23,30 @@
 | 8 | [Structured Design — Examples & Structure Charts](notes/08-structured-design-examples-and-structure-charts.md) | **L7b** (15–18-09-2026) | `8.pdf` |
 | 9 | [Mid-Sem 2025 Paper — Solved](notes/09-mid-sem-2025-paper-solved.md) ⭐ *last year's actual paper* | — | `MID-SEM- SE_2025.pdf` |
 
+## After-mid (end-semester)
+
+| # | Chapter | Lecture | Source file |
+|---|---|---|---|
+| 10 | [Object-Oriented Concepts](notes/10-object-oriented-concepts.md) | **L9** (29-09 to 06-10-2026) | `LECTURE 9- Ch7-Object Oriented Modelling Using UML  pdf.pdf` |
+| 11 | [UML: Views, Use Case, Class, Interaction, Activity & State-Chart Diagrams](notes/11-uml-diagrams.md) ⭐ | **L9** (06-10 to 28-10-2026) | same + UML 2.0 slides of L9B |
+| 12 | [OO Software Development: OOAD, Design Patterns & CRC Cards](notes/12-object-oriented-design-and-patterns.md) ⭐ | **L9B** (30-10 to 13-11-2026) | `LECTURE 9B- Ch8-Object Oriented Design  &SW Development  pdf.pdf` |
+| 13 | [User Interface Design](notes/13-user-interface-design.md) | **L10** (13-11-2026) | `LECTURE 10  Ch9- User Interface Design 141126.pdf` |
+| 14 | [Software Project Management: Planning, COCOMO, Staffing & Teams](notes/14-software-project-management.md) ⭐ | **L12** (22-11-2026) | `Lecture 12-Software Project Management _Prahlad NIT 2026.pdf` |
+| 15 | [Testing & Debugging](notes/15-testing-and-debugging.md) ⭐ | **L13** (17-11-2026) | `Lecture 13 Testing & Debugging 171126.pdf` |
+| 16 | [Software Quality Management: ISO 9000, SEI CMM, PSP, Six Sigma](notes/16-software-quality-management.md) | **L17** (18–20-11-2026) | `LECTURE 17- Software Quality Management Prahlad NIT CS3501.pdf` |
+
+> **Gaps in the after-mid lecture numbering:** L11 and L14–L16 are not in `source/`. *(The testing slides call themselves "Lecture 11" inside the file, while the file name says Lecture 13.)* White-box testing is explicitly excluded in class. If more lectures arrive, they slot in between these chapters.
+
+```mermaid
+graph LR
+    A["Ch 10<br/>OO concepts"] --> B["Ch 11<br/>UML diagrams"]
+    B --> C["Ch 12<br/>OOAD, patterns,<br/>CRC"]
+    C --> D["Ch 13<br/>UI design"]
+    E["Ch 14<br/>Project mgmt,<br/>COCOMO"] --> F["Ch 15<br/>Testing &<br/>debugging"]
+    F --> G["Ch 16<br/>Quality: ISO, CMM"]
+    style B fill:#e0f2f1,stroke:#00897b,color:#004d40
+```
+
 ## Exam pattern (from the 2025 paper)
 
 **30 marks · 1:30 hours.** Q1 has six 1-mark definitions. Then come four 6-mark questions, with an **either/or** choice between Waterfall (Q3) and Agile (Q4). Questions are tagged **CO1** (intro, life cycle models) and **CO2** (requirements, UML).
@@ -25,7 +54,7 @@
 ## ⚠️ Known gaps
 
 - **Lecture 5 is missing** from the folder. L1–L4, L6, L7 and L7b are covered. If you get L5 material, it slots between chapters 5 and 6.
-- **The 2025 paper asks about topics not in L1–L7:** **Agile**, **UML**, **use case diagrams**, **sequence diagrams**, **inheritance** and **structured programming**. They account for **9 compulsory marks** (Q1 ii, iv, v and Q6). Agile is the Q4 alternative, so you can avoid it by answering Waterfall. Full answers are in [Ch. 9](notes/09-mid-sem-2025-paper-solved.md). They may be in the missing L5 or a later OO-design lecture, so check with your teacher whether they are in this year's mid-sem.
+- **The 2025 paper asks about topics not in L1–L7:** **Agile**, **UML**, **use case diagrams**, **sequence diagrams**, **inheritance** and **structured programming**. They account for **9 compulsory marks** (Q1 ii, iv, v and Q6). Agile is the Q4 alternative, so you can avoid it by answering Waterfall. Full answers are in [Ch. 9](notes/09-mid-sem-2025-paper-solved.md). **Update:** UML, use cases, sequence diagrams and inheritance are now taught in **Lecture 9** ([Ch. 10–12](notes/10-object-oriented-concepts.md)), so expect them in the end-sem. **Agile** is still not in any supplied lecture.
 
 ## About the source files
 
@@ -52,6 +81,20 @@
 - [ ] **2025 paper:** software crisis (1960s) · Agile model + manifesto · SRS organization **with an example** · "Renew book" use case + **sequence diagram**
 - [ ] One-line definitions: feasibility study, structured programming, decision tree, inheritance, UML, functional requirements
 
+**After-mid**
+- [ ] OO concepts: object, class (= ADT?), the **four relationships**, **aggregation vs composition** (Order example), abstraction, encapsulation, **static vs dynamic binding**, genericity, OO pros and cons
+- [ ] UML: origin, **five views and their diagrams**, why the user's view is central
+- [ ] **Use case diagram + text description** (supermarket prize scheme), **include / extend / generalisation**, packaging
+- [ ] **Class diagram** notation (◇ ◆ △, dotted arrow, multiplicity); object diagram
+- [ ] **Sequence vs collaboration** diagram (renew book); **activity diagram** (IIT admission, swim lanes); **state-chart** (Order object)
+- [ ] UML 2.0: 13 diagrams, combined fragments
+- [ ] OOA vs OOD; **design patterns** (4 parts; architectural / design / idiom; antipatterns); **Expert, Creator, Controller, Facade, MVC / publish–subscribe**
+- [ ] OOAD / Unified Process; **boundary / entity / controller** objects; **CRC cards**; tic-tac-toe and supermarket designs
+- [ ] UI: characteristics of a good UI, error messages, mode-based vs modeless, **command / menu / direct-manipulation** interfaces, menu structuring, WMS and widgets
+- [ ] Project management: SPMP, **LOC vs FP**, Delphi, **basic / intermediate / complete COCOMO** (32 KLOC → 91 PM, 14 months), Rayleigh curve, **Putnam** (halve the time → 16× effort), team structures
+- [ ] Testing: error / fault / failure, **verification vs validation**, **ECP and BVA** (square root 1–5000), debugging approaches, **integration** (big bang / top-down / bottom-up / mixed), **alpha / beta / acceptance / stress**, **error seeding**
+- [ ] Quality: quality factors, **inspection → QC → QA → TQM**, product vs process metrics, **ISO 9001** (stages, clauses, shortcomings), **CMM five levels + KPAs**, ISO vs CMM, PSP, **Six Sigma** (3.4 DPMO, DMAIC / DMADV)
+
 ## The two facts most likely to be asked
 
 $$\textbf{Good design} = \textbf{High Cohesion} + \textbf{Low Coupling}$$
@@ -67,3 +110,14 @@ $$\textbf{Good design} = \textbf{High Cohesion} + \textbf{Low Coupling}$$
 | **1. Functional** ⭐ *(best)* | |
 
 *Degree of cohesiveness **increases** from Coincidental to Functional. Degree of coupling **increases** from Data to Content.*
+
+## End-sem formula and fact sheet
+
+| Topic | Formula / fact |
+|---|---|
+| Function points | $FP = 4\cdot\text{in} + 5\cdot\text{out} + 4\cdot\text{inq} + 10\cdot\text{files} + 10\cdot\text{interfaces}$ |
+| Basic COCOMO | $E = a(\text{KLOC})^b$ PM, $T = 2.5\,E^c$ months. Organic 2.4 / 1.05 / 0.38 · semi-detached 3.0 / 1.12 / 0.35 · embedded 3.6 / 1.20 / 0.32 |
+| Putnam | $L = C_k K^{1/3} t_d^{4/3}$, so $K_1/K_2 = (t_{d2}/t_{d1})^4$ (halving the time gives 16× the effort). Boehm's limit ≈ 75 % of nominal |
+| Error seeding | Remaining $= n\,(S - s)/s$ |
+| CMM levels | Initial → Repeatable → Defined (≈ ISO 9001) → Managed → Optimizing |
+| Six Sigma | ≤ 3.4 defects per million (5σ = 230, 4σ = 6210) |

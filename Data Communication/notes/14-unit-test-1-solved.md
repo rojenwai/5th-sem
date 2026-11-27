@@ -140,4 +140,4 @@ These are not in the lecture notes, but Q3, Q5 and Q6 depend on them.
 
 ---
 
-**Previous:** [← 13. Spread Spectrum](13-spread-spectrum.md) · **Back to:** [Data Communication index](../README.md)
+**Previous:** [← 13. Spread Spectrum](13-spread-spectrum.md) · **Next (end-term):** [15. Transmission Media →](15-transmission-media.md) · **Back to:** [Data Communication index](../README.md)

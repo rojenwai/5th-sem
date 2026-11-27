@@ -1,0 +1,16 @@
+End term syllabus: •	Signals and noise
+•	Nyquist rate
+•	Shannon capacity
+•	Analog transmission techniques
+•	
+•	Modulation techniques
+•	Fundamentals of AM and FM
+•	PCM,
+•	Line coding
+•	Error handling techniques
+•	Multiplexing (FDM,TDM), xDSL
+•	Spread spectrum
+•	Transmission media: Guided (twisted pair, coaxial, fiber optic), Unguided media 
+•	Principles of switching
+•	Local area networks: Ethernet, Fast Ethernet, Introduction to Gigabit Ethernet and WLAN
+•	Hubs, bridges, and switches
